@@ -67,10 +67,6 @@ def new_review(id):
         title = form.title.data
         review = form.review.data
         
-        # new_review = Review(movie.id,title,movie.poster,review)
-        # new_review.save_review()
-        # return redirect(url_for('main.movie',id = movie.id )) #renamed 'movie' to 'main.movie' for debug
-        
         # Updated review instance
         new_review = Review(movie_id=movie.id,movie_title=title,image_path=movie.poster,movie_review=review,user=current_user)
 
